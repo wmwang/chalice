@@ -1,0 +1,49 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "helloworld2-dev:app.app (python3.8)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/helloworld2-dev",
+                "lambdaHandler": "app.app"
+            },
+            "lambda": {
+                "runtime": "python3.8",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        },
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "helloworld-dev:app.app (python3.10)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/helloworld-dev",
+                "lambdaHandler": "app.app"
+            },
+            "lambda": {
+                "runtime": "python3.10",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        },
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "serverlessrepo-admin-Comprehe-PiiRedactionFunction-Rm245QnYmK2J:handler.redact_pii_documents_handler (python3.8)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/serverlessrepo-admin-Comprehe-PiiRedactionFunction-Rm245QnYmK2J",
+                "lambdaHandler": "handler.redact_pii_documents_handler"
+            },
+            "lambda": {
+                "runtime": "python3.8",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}
